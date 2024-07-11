@@ -41,3 +41,12 @@ python3 /mnt/beegfs/shares/chavez_lab/expanse/scripts/AmpliconSuite-pipeline/Amp
 --ref mm10 --cnsize_min 10000 --run_AA --run_AC
 ```
 You can run the script using `sbatch file_name.sh`. The resulting output file is slurm-jobid.out. To find the job id number, run `squeue -u username`. Then view your output file by running `cat slurm-jobid.out`, and this will tell you the resulting errors or progress of running the corresponding script.
+
+
+Another alternative is to use a script that involves the AmpliconArchitect Docker container found in `/mnt/beegfs/shares/chavez_lab/expanse/scripts/AmpliconSuite-pipeline.sbatch` written by Owen. To step back a little, let's first define what a docker container is. A Docker container is essentially a self-contained environment in which we do not need to manually install the required packages or set up the virtual environment as in the previous option. For AA, the docker container, `docker://jluebeck/prepareaa:latest`, includes the tool itself, all dependencies, and libraries required. 
+
+The usage for this is simple:
+```bash
+sbatch AmpliconSuite-pipeline.sbatch --sample_name MP040819_L7 --fastqs /mnt/beegfs/shares/chavez_lab/expanse/data/2024-01-05_tanja-mouse-wgs/MP040819/MP040819_CKDO230001655-1A_22GHJCLT3_L7_1.fq.gz \
+/mnt/beegfs/shares/chavez_lab/expanse/data/2024-01-05_tanja-mouse-wgs/MP040819/MP040819_CKDO230001655-1A_22GHJCLT3_L7_2.fq.gz \
+-t 16 --ref mm10 --cnsize_min 10000 --run_AA --run_AC
