@@ -47,6 +47,7 @@ Another alternative is to use a script that involves the AmpliconArchitect Docke
 
 The usage for this is simple:
 ```bash
+cd /mnt/beegfs/shares/chavez_lab/expanse/scripts/
 sbatch AmpliconSuite-pipeline.sbatch --sample_name MP040819_L7 --fastqs /mnt/beegfs/shares/chavez_lab/expanse/data/2024-01-05_tanja-mouse-wgs/MP040819/MP040819_CKDO230001655-1A_22GHJCLT3_L7_1.fq.gz \
 /mnt/beegfs/shares/chavez_lab/expanse/data/2024-01-05_tanja-mouse-wgs/MP040819/MP040819_CKDO230001655-1A_22GHJCLT3_L7_2.fq.gz \
 -t 16 --ref mm10 --cnsize_min 10000 --run_AA --run_AC
