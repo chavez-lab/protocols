@@ -1,5 +1,5 @@
 # Running Amplicon Architect on the SBP Pines Compute Cluster
-Assuming that you have created an account, login to pines using `ssh usernames@pines` and input your password.
+This tutorial assumes that you have created an account on Pines and can login using ssh. If not refer to the Tutorial (Insert Name Here). First, login to pines using `ssh usernames@pines` and input your password.
 
 The tutorial is based on the Bafna Lab's [Amplicon Suite Github repo](https://github.com/AmpliconSuite/AmpliconSuite-pipeline). 
 
