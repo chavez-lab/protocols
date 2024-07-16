@@ -2,7 +2,7 @@
 Sometimes, it becomes the case where your desktop does not have enough computational resources (e.g. memory, disk space, etc) to run your Bioinformatics/computational tasks. 
 Jupyter lab is my preferred environment of writing code, and it can also be accessed through the Pines cluster. Here are the steps to run it. 
 
-There is a script in the file path `:/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
+There is a script in the file path: `/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
 ```bash
 ssh pines
 #Enter your password
