@@ -2,9 +2,19 @@
 Sometimes, it becomes the case where your desktop does not have enough computational resources (e.g. memory, disk space, etc) to run your Bioinformatics/computational tasks. 
 Jupyter lab is my preferred environment of writing code, and it can also be accessed through the Pines cluster. Here are the steps to run it. 
 
-There is a script in the file path `:/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
+First, let's install Conda and Jupyter Lab. If you already have them installed, feel free to skip this step. To install, do the following
 ```bash
 ssh pines
+#Enter your password
+cd /path/to/desination/directory #path you would feel comfortable having conda installed
+wget https://repo.anaconda.com/archive/Anaconda3-2023.03-Linux-x86_64.sh #download the Anaconda installer script from the official Anaconda repository
+bash Anaconda3-2023.03-Linux-x86_64.sh #runs the Anaconda installer script
+source ~/.bashrc #initializes Anaconda
+conda install -c conda-forge jupyterlab #installs Jupyter Lab
+```
+
+There is a script in the file path `:/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
+```bash
 #Enter your password
 cd /mnt/beegfs/shares/chavez_lab/expanse/scripts/
 cat jupyter.sh
