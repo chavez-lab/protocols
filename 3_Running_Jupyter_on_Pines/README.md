@@ -52,7 +52,7 @@ jupyter-lab --no-browser --port=8893 --ip=0.0.0.0
 # Start JupyterLab without opening a browser, set it to listen on port 8893 and on all IP addresses (0.0.0.0)
 ```
 
-I would first recommend copying the file `jupyter.sh` to your directory where you want to run Jupyter, using `cp jupyter.sh /path/to/desination_dir`. Then you can use 'cd path/to/desination_dir`. 
+I would first recommend copying the file `jupyter.sh` to your directory where you want to run Jupyter, using `cp jupyter.sh /path/to/desination_dir`. Then you can use `cd path/to/desination_dir`. 
 
 Now, within your destination directory, run the script using `sbatch jupyter.sh`. After doing this, it will provide an output like this:`Submitted batch job 243407`.
 You can view the logs of this output using `cat jupyter_jobid.log`. In this case, it would be `cat jupyter_243407.log`. Next, run squeue -u username to determine what node your script is running on. 
