@@ -13,7 +13,7 @@ source ~/.bashrc #initializes Anaconda
 conda install -c conda-forge jupyterlab #installs Jupyter Lab
 ```
 
-There is a script in the file path `:/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
+There is a script in the file path: `/mnt/beegfs/shares/chavez_lab/expanse/scripts/`. You can see what the script contains using the following commands: 
 ```bash
 #Enter your password
 cd /mnt/beegfs/shares/chavez_lab/expanse/scripts/
