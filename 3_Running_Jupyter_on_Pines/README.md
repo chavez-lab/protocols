@@ -57,7 +57,7 @@ I would first recommend copying the file `jupyter.sh` to your directory where yo
 Now, within your destination directory, run the script using `sbatch jupyter.sh`. After doing this, it will provide an output like this:`Submitted batch job 243407`.
 You can view the logs of this output using `cat jupyter_jobid.log`. In this case, it would be `cat jupyter_243407.log`. Next, run squeue -u username to determine what node your script is running on. 
 
-Next, use `Control + T` on your keyboard to create a new terminal tab. Then use the bash command `ssh -L <port_number>:localhost:8893 <username>@<pines_ip>`. 
+Next, use `Control + T` on your keyboard to create a new terminal tab, and do not log into pines just yet. Then use the bash command `ssh -L <port_number>:localhost:8893 <username>@<pines_ip>`. 
 In this case, it would be `ssh -L 8899:n001:8893 rkenkre@pines` because my scripts is running on node 1. Input your password and you should be able to access Jupyter lab by opening a web
 browser on your local machine and navigating to:
 `http://localhost:8899`
