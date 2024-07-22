@@ -8,11 +8,9 @@ The pipeline is located in the directory `/mnt/beegfs/shares/chavez_lab/expanse/
 cd /mnt/beegfs/shares/chavez_lab/expanse/scripts/AmpliconSuite-pipeline
 ls
 ```
-Now, you need to create the conda environment and install the required packages. It is recommended to use Conda to do so with the following commands:
+Now, the conda environment and installation of the required packages has already been done for you. The conda environment I created for this is called `ampsuite`. It is start this environment to do so with the following command:
 ```bash 
-conda create -n ampsuite && conda activate ampsuite
-conda install -c bioconda -c conda-forge ampliconsuite 
-conda install -c mosek mosek
+conda activate /mnt/beegfs/shares/chavez_lab/expanse/bin/ampsuite
 ```
 
 The mosek license required to run AA is placed in `/mnt/beegfs/shares/chavez_lab/expanse/scripts/AmpliconSuite-pipeline/mosek/8/licenses`. 
