@@ -81,8 +81,9 @@ This tutorial was written and tested on Mac OS 13.5 and Ubuntu 16. Similar resul
    ![jupyter](../docs/0-jupyter-landing.png)
 
 # Troubleshooting
-- [WSL2 on Windows] `CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://repo.anaconda.com/pkgs/main/linux-64/current_repodata.json>
-tl;dr close and reopen your shell.` [source](https://stackoverflow.com/questions/67923183/miniconda-on-wsl2-ubuntu-20-04-fails-with-condahttperror-http-000-connection)
+- [WSL2 on Windows] `CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://repo.anaconda.com/pkgs/main/linux-64/current_repodata.json>`
+tl;dr close and reopen your shell. [source](https://stackoverflow.com/questions/67923183/miniconda-on-wsl2-ubuntu-20-04-fails-with-condahttperror-http-000-connection)
+- [Mac OS running Apple silicon] `UnsatisfiableError`. This may be caused by trying to install packages compiled to run on apple silicon. Not all packages have apple silicon builds, so `conda` may not be able to find the dependency it needs. To fix, run `conda config --env --set subdir osx-64` **while the environment you are trying to create is activated**. This essentially tells your machine to pretend it's an older mac with an intel chip. Then, try installing all of your packages again.
    
 [^1]: [Mac OS] This is the Terminal app. [Windows] [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) is your
   best friend, but mounting drives is difficult. [Linux] Bash Shell.
