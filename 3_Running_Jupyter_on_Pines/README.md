@@ -21,7 +21,8 @@ cat jupyter.sh
 ```
 Let's go line-by-line for the script:
 
-```#!/bin/bash
+```
+#!/bin/bash
 # This line specifies the script interpreter to be Bash. No touchy!
 
 #SBATCH --job-name=jupyter
@@ -45,8 +46,8 @@ Let's go line-by-line for the script:
 #SBATCH --output=jupyter_%j.log
 # Direct the output of the job to a file named jupyter_<job_id>.log, where <job_id> is replaced with the job ID
 
-module load anaconda
-# Load the Anaconda module to access the Python environment
+#SBATCH -D .
+# start the jupyter server in the current working directory.
 
 jupyter-lab --no-browser --port=8893 --ip=0.0.0.0
 # Start JupyterLab without opening a browser, set it to listen on port 8893 and on all IP addresses (0.0.0.0)
