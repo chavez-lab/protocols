@@ -61,7 +61,7 @@ This tutorial was written and tested on Mac OS 13.5 and Ubuntu 16. Similar resul
    conda install python numpy pandas scipy statsmodels scikit-learn --yes
 
    # data visualization tools
-   conda install matplotlib seaborn --yes
+   conda install matplotlib seaborn mscorefonts --yes
 
    # ipykernel gives the jupyter access to this environment and all packages installed here.
    conda install ipykernel --yes
