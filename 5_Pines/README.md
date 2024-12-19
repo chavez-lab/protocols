@@ -78,7 +78,7 @@ For more detailed information about a specific job, use the scontrol command:
 scontrol show job <job_id>
 ```
 
-Here is an overview of the avaialable resources that includes partitions, nodes, and their statuses:
+Here is an overview of the available resources that includes partitions, nodes, and their current statuses:
 | PARTITION  | AVAIL | TIMELIMIT | NODES | STATE | NODELIST        |
 |------------|-------|-----------|-------|-------|-----------------|
 | normal*    | up    | infinite  | 2     | mix   | n[009-010]      |
