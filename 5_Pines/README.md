@@ -78,5 +78,20 @@ For more detailed information about a specific job, use the scontrol command:
 scontrol show job <job_id>
 ```
 
+Here is an overview of the avaialable resources that includes partitions, nodes, and their statuses:
+| PARTITION  | AVAIL | TIMELIMIT | NODES | STATE | NODELIST        |
+|------------|-------|-----------|-------|-------|-----------------|
+| normal*    | up    | infinite  | 2     | mix   | n[009-010]      |
+| normal*    | up    | infinite  | 8     | alloc | n[001-008]      |
+| normal*    | up    | infinite  | 2     | idle  | n[011-012]      |
+| low        | up    | infinite  | 2     | mix   | n[009-010]      |
+| low        | up    | infinite  | 8     | alloc | n[001-008]      |
+| low        | up    | infinite  | 2     | idle  | n[011-012]      |
+| high       | up    | infinite  | 2     | mix   | n[009-010]      |
+| high       | up    | infinite  | 8     | alloc | n[001-008]      |
+| high       | up    | infinite  | 2     | idle  | n[011-012]      |
+| gpu-normal | up    | infinite  | 5     | mix   | gpu[001,003-006]|
+| gpu-normal | up    | infinite  | 1     | alloc | gpu002          |
+| gpu-l40    | up    | infinite  | 3     | mix   | gpu[007-009]    |
 
 
