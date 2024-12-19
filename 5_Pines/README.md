@@ -5,7 +5,8 @@ The **Pines** server is a high-performance computing (HPC) cluster designed to h
 ## SBP Compute Cluster Pines:
 The Pines server is a high-performance computing (HPC) cluster designed to handle computational tasks, such as data analysis, machine learning, and simulations, across multiple nodes and processing units. To manage and distribute jobs efficiently across the system, SLURM (Simple Linux Utility for Resource Management) is used as the job scheduler. SLURM is a powerful workload manager that allows users to submit, manage, and monitor jobs running on the cluster.
 
-Key Features of SLURM on Pines:
+### Key Features of SLURM on Pines:
+
 Job Submission: Users can submit jobs to SLURM, specifying the resources needed (e.g., CPUs, GPUs, memory) and the expected runtime. SLURM automatically assigns resources based on availability.
 
 Resource Allocation: SLURM handles resource allocation across different partitions, ensuring that jobs are run efficiently based on their resource requirements. For example, jobs that require GPUs can be scheduled on specific GPU partitions like gpu-I40.
