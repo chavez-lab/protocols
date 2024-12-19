@@ -40,6 +40,43 @@ Write a SLURM batch script that includes the necessary resources (e.g., CPUs, me
 
 # Run the application
 python my_script.py
-
+```
 ### 2. Submit the Job:
 Once the job script is ready, submit it using the sbatch command:
+```bash
+sbatch my_job_script.sh
+```
+### 3. Monitor Job Status:
+You can track the status of your job with the squeue command. This command will show you the queue status of your job and other jobs running on the cluster:
+```bash
+squeue -u username
+```
+If you want to check the status of a specific job, use its job ID:
+```
+squeue -j <job_id>
+```
+### 4. Job Output and Logs:
+After your job completes, you can check the job’s output and error logs specified in your script (e.g., my_job.out, my_job.err). You can view the log files directly in your terminal:
+
+```bash
+cat my_job.out
+```
+You can also monitor real-time output while the job is running using the tail command:
+```bash
+tail -f my_job.out
+```
+### 5. Canceling a Job:
+If you need to cancel a running job, use the scancel command followed by the job ID:
+
+```bash
+scancel <job_id>
+```
+### 6. Check Detailed Job Information:
+For more detailed information about a specific job, use the scontrol command:
+
+```bash
+scontrol show job <job_id>
+```
+
+
+
